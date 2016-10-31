@@ -15,6 +15,11 @@ use TelegramBot\Api\Types\User;
 class ChosenInlineResult extends BaseType
 {
     /**
+     * Return class name
+     */
+    const className = __CLASS__;
+
+    /**
      * {@inheritdoc}
      *
      * @var array
@@ -28,8 +33,8 @@ class ChosenInlineResult extends BaseType
      */
     static protected $map = [
         'result_id' => true,
-        'from' => User::class,
-        'location' => Location::class,
+        'from' => User::className,
+        'location' => Location::className,
         'inline_message_id' => true,
         'query' => true,
     ];

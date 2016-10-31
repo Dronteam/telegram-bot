@@ -15,6 +15,11 @@ use TelegramBot\Api\TypeInterface;
 class UserProfilePhotos extends BaseType implements TypeInterface
 {
     /**
+     * Return class name
+     */
+    const className = __CLASS__;
+
+    /**
      * {@inheritdoc}
      *
      * @var array
@@ -28,7 +33,7 @@ class UserProfilePhotos extends BaseType implements TypeInterface
      */
     static protected $map = [
         'total_count' => true,
-        'photos' => ArrayOfArrayOfPhotoSize::class,
+        'photos' => ArrayOfArrayOfPhotoSize::className,
     ];
 
     /**

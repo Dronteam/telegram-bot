@@ -13,6 +13,11 @@ use TelegramBot\Api\BaseType;
 class ReplyKeyboardMarkup extends BaseType
 {
     /**
+     * Return class name
+     */
+    const className = __CLASS__;
+
+    /**
      * {@inheritdoc}
      *
      * @var array

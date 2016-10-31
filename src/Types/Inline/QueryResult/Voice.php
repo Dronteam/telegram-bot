@@ -42,8 +42,8 @@ class Voice extends AbstractInlineQueryResult
         'voice_url' => true,
         'title' => true,
         'voice_duration' => true,
-        'reply_markup' => InlineKeyboardMarkup::class,
-        'input_message_content' => InputMessageContent::class,
+        'reply_markup' => InlineKeyboardMarkup::className,
+        'input_message_content' => InputMessageContent::className,
     ];
 
     /**

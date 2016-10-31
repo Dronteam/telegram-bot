@@ -15,6 +15,11 @@ use TelegramBot\Api\TypeInterface;
 class Sticker extends BaseType implements TypeInterface
 {
     /**
+     * Return class name
+     */
+    const className = __CLASS__;
+
+    /**
      * {@inheritdoc}
      *
      * @var array
@@ -30,7 +35,7 @@ class Sticker extends BaseType implements TypeInterface
         'file_id' => true,
         'width' => true,
         'height' => true,
-        'thumb' => PhotoSize::class,
+        'thumb' => PhotoSize::className,
         'file_size' => true,
     ];
 

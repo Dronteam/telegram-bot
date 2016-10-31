@@ -15,6 +15,11 @@ use TelegramBot\Api\TypeInterface;
 class Video extends BaseType implements TypeInterface
 {
     /**
+     * Return class name
+     */
+    const className = __CLASS__;
+
+    /**
      * {@inheritdoc}
      *
      * @var array
@@ -31,9 +36,9 @@ class Video extends BaseType implements TypeInterface
         'width' => true,
         'height' => true,
         'duration' => true,
-        'thumb' => PhotoSize::class,
+        'thumb' => PhotoSize::className,
         'mime_type' => true,
-        'file_size' => true
+        'file_size' => true,
     ];
 
     /**

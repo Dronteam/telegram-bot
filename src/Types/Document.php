@@ -16,16 +16,21 @@ use TelegramBot\Api\TypeInterface;
 class Document extends BaseType implements TypeInterface
 {
     /**
+     * Return class name
+     */
+    const className = __CLASS__;
+
+    /**
      * {@inheritdoc}
      *
      * @var array
      */
     static protected $map = [
         'file_id' => true,
-        'thumb' => PhotoSize::class,
+        'thumb' => PhotoSize::className,
         'file_name' => true,
         'mime_type' => true,
-        'file_size' => true
+        'file_size' => true,
     ];
 
     /**

@@ -8,6 +8,11 @@ use TelegramBot\Api\TypeInterface;
 class Message extends BaseType implements TypeInterface
 {
     /**
+     * Return class name
+     */
+    const className = __CLASS__;
+
+    /**
      * {@inheritdoc}
      *
      * @var array
@@ -21,35 +26,35 @@ class Message extends BaseType implements TypeInterface
      */
     static protected $map = [
         'message_id' => true,
-        'from' => User::class,
+        'from' => User::className,
         'date' => true,
-        'chat' => Chat::class,
-        'forward_from' => User::class,
+        'chat' => Chat::className,
+        'forward_from' => User::className,
         'forward_date' => true,
-        'reply_to_message' => Message::class,
+        'reply_to_message' => Message::className,
         'text' => true,
-        'entities' => ArrayOfMessageEntity::class,
-        'audio' => Audio::class,
-        'document' => Document::class,
-        'photo' => ArrayOfPhotoSize::class,
-        'sticker' => Sticker::class,
-        'video' => Video::class,
-        'voice' => Voice::class,
+        'entities' => ArrayOfMessageEntity::className,
+        'audio' => Audio::className,
+        'document' => Document::className,
+        'photo' => ArrayOfPhotoSize::className,
+        'sticker' => Sticker::className,
+        'video' => Video::className,
+        'voice' => Voice::className,
         'caption' => true,
-        'contact' => Contact::class,
-        'location' => Location::class,
-        'venue' => Venue::class,
-        'new_chat_member' => User::class,
-        'left_chat_member' => User::class,
+        'contact' => Contact::className,
+        'location' => Location::className,
+        'venue' => Venue::className,
+        'new_chat_member' => User::className,
+        'left_chat_member' => User::className,
         'new_chat_title' => true,
-        'new_chat_photo' => ArrayOfPhotoSize::class,
+        'new_chat_photo' => ArrayOfPhotoSize::className,
         'delete_chat_photo' => true,
         'group_chat_created' => true,
         'supergroup_chat_created' => true,
         'channel_chat_created' => true,
         'migrate_to_chat_id' => true,
         'migrate_from_chat_id' => true,
-        'pinned_message' => Message::class,
+        'pinned_message' => Message::className,
     ];
 
     /**

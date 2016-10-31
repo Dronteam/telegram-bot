@@ -47,8 +47,8 @@ class Venue extends AbstractInlineQueryResult
         'thumb_url' => true,
         'thumb_width' => true,
         'thumb_height' => true,
-        'reply_markup' => InlineKeyboardMarkup::class,
-        'input_message_content' => InputMessageContent::class,
+        'reply_markup' => InlineKeyboardMarkup::className,
+        'input_message_content' => InputMessageContent::className,
     ];
 
     /**

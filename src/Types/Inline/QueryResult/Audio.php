@@ -43,8 +43,8 @@ class Audio extends AbstractInlineQueryResult
         'title' => true,
         'performer' => true,
         'audio_duration' => true,
-        'reply_markup' => InlineKeyboardMarkup::class,
-        'input_message_content' => InputMessageContent::class,
+        'reply_markup' => InlineKeyboardMarkup::className,
+        'input_message_content' => InputMessageContent::className,
     ];
 
     /**

@@ -20,6 +20,11 @@ use TelegramBot\Api\TypeInterface;
 class Venue extends BaseType implements TypeInterface
 {
     /**
+     * Return class name
+     */
+    const className = __CLASS__;
+
+    /**
      * {@inheritdoc}
      *
      * @var array
@@ -32,7 +37,7 @@ class Venue extends BaseType implements TypeInterface
      * @var array
      */
     static protected $map = [
-        'location' => Location::class,
+        'location' => Location::className,
         'title' => true,
         'address' => true,
         'foursquare_id' => true,

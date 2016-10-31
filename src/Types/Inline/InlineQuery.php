@@ -16,6 +16,11 @@ use TelegramBot\Api\Types\User;
 class InlineQuery extends BaseType
 {
     /**
+     * Return class name
+     */
+    const className = __CLASS__;
+
+    /**
      * {@inheritdoc}
      *
      * @var array
@@ -29,8 +34,8 @@ class InlineQuery extends BaseType
      */
     static protected $map = [
         'id' => true,
-        'from' => User::class,
-        'location' => Location::class,
+        'from' => User::className,
+        'location' => Location::className,
         'query' => true,
         'offset' => true,
     ];

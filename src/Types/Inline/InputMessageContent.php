@@ -12,5 +12,8 @@ use TelegramBot\Api\BaseType;
 
 class InputMessageContent extends BaseType
 {
-
+    /**
+     * Return class name
+     */
+    const className = __CLASS__;
 }

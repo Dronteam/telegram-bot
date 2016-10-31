@@ -36,8 +36,8 @@ class Photo extends AbstractInlineQueryResult
         'title' => true,
         'description' => true,
         'caption' => true,
-        'input_message_content' => InputMessageContent::class,
-        'reply_markup' => InlineKeyboardMarkup::class,
+        'input_message_content' => InputMessageContent::className,
+        'reply_markup' => InlineKeyboardMarkup::className,
     ];
 
     /**

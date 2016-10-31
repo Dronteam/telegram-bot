@@ -13,6 +13,10 @@ use TelegramBot\Api\TypeInterface;
 
 class MessageEntity extends BaseType implements TypeInterface
 {
+    /**
+     * Return class name
+     */
+    const className = __CLASS__;
 
     const TYPE_MENTION = 'mentin';
     const TYPE_HASHTAG = 'hashtag';

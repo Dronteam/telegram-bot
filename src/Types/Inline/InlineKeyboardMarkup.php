@@ -10,5 +10,8 @@ namespace TelegramBot\Api\Types\Inline;
 
 class InlineKeyboardMarkup
 {
-
+    /**
+     * Return class name
+     */
+    const className = __CLASS__;
 }

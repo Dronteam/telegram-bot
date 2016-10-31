@@ -16,6 +16,11 @@ use TelegramBot\Api\BaseType;
 class ReplyKeyboardHide extends BaseType
 {
     /**
+     * Return class name
+     */
+    const className = __CLASS__;
+
+    /**
      * {@inheritdoc}
      *
      * @var array

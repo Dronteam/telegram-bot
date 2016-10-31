@@ -17,6 +17,11 @@ use TelegramBot\Api\Types\Inline\InlineQuery;
 class Update extends BaseType implements TypeInterface
 {
     /**
+     * Return class name
+     */
+    const className = __CLASS__;
+
+    /**
      * {@inheritdoc}
      *
      * @var array
@@ -30,9 +35,9 @@ class Update extends BaseType implements TypeInterface
      */
     static protected $map = [
         'update_id' => true,
-        'message' => Message::class,
-        'inline_query' => InlineQuery::class,
-        'chosen_inline_result' => ChosenInlineResult::class,
+        'message' => Message::className,
+        'inline_query' => InlineQuery::className,
+        'chosen_inline_result' => ChosenInlineResult::className,
     ];
 
     /**

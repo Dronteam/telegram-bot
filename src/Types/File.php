@@ -18,6 +18,11 @@ use TelegramBot\Api\TypeInterface;
 class File extends BaseType implements TypeInterface
 {
     /**
+     * Return class name
+     */
+    const className = __CLASS__;
+
+    /**
      * {@inheritdoc}
      *
      * @var array
